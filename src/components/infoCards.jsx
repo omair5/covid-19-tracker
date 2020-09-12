@@ -47,7 +47,7 @@ export default function InfoCards() {
         <div className={classes.root}>
             <Grid container spacing={3} className={classes.gridContainer}>
                 {/* INFO */}
-                <Grid item xs={9} md={6}>
+                <Grid item xs={12} md={6}>
                     <Paper className={classes.paper} style={{ borderBottom: "15px solid #00ccff" }} >
                         <Typography variant="h5" gutterBottom ><span style={{ borderBottom: '4px solid black', fontWeight: 'bolder' }}>{country.toUpperCase()}</span></Typography>
                         <h2>
@@ -62,7 +62,7 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* INFECTED */}
-                <Grid item xs={9} md={6}>
+                <Grid item xs={12} md={6}>
                     <Paper className={classes.paper} style={{ borderBottom: "15px solid #5496ff" }} >
                         <Typography variant="h5" gutterBottom> INFECTED</Typography>
                         <Typography variant="h6" gutterBottom>
@@ -75,7 +75,7 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* RECOVERED */}
-                <Grid item xs={9} md={6}>
+                <Grid item xs={12} md={6}>
                     <Paper className={classes.paper} style={{ borderBottom: "15px solid #57ff70" }} >
                         <Typography variant="h5" gutterBottom> RECOVERED</Typography>
                         <Typography variant="h6" gutterBottom>
@@ -88,7 +88,7 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* DEATHS */}
-                <Grid item xs={9} md={6}>
+                <Grid item xs={12} md={6}>
                     <Paper className={classes.paper} style={{ borderBottom: "15px solid #ff5757" }} >
                         <Typography variant="h5" gutterBottom> DEATHS</Typography>
                         <Typography variant="h6" gutterBottom>

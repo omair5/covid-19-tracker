@@ -90,7 +90,7 @@ const Chart = () => {
     // UI
     return (
         <div >
-            {country === 'Global' ? data === '' ? null : <Line data={lineChart} width={60} height={15} /> : <Bar data={BarChart} width={100} height={25} />}
+            {country === 'Global' ? data === '' ? null : <Line data={lineChart} width={60} height={30} /> : <Bar data={BarChart} width={100} height={50} />}
         </div>
     );
 }

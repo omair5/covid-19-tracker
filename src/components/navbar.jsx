@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
         display: 'block',
         [theme.breakpoints.down('md')]: {
             textAlign:'center',
-            padding:'7px 0px'
+            padding:'7px 0px',
+            fontSize:'18px',
+            fontWeight:'bolder'
         },
     },
     search: {
