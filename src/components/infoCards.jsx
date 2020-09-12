@@ -47,8 +47,8 @@ export default function InfoCards() {
         <div className={classes.root}>
             <Grid container spacing={3} className={classes.gridContainer}>
                 {/* INFO */}
-                <Grid item xs={12} md={6}>
-                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #00ccff" }} >
+                <Grid item xs={11} md={6} lg={3}>
+                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #111D4A" }} >
                         <Typography variant="h5" gutterBottom ><span style={{ borderBottom: '4px solid black', fontWeight: 'bolder' }}>{country.toUpperCase()}</span></Typography>
                         <h2>
                             RECOVERY RATE : <CountUp start={0} end={rate.recoveryRate} duration={1.5} />%
@@ -62,8 +62,8 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* INFECTED */}
-                <Grid item xs={12} md={6}>
-                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #5496ff" }} >
+                <Grid item xs={11} md={6} lg={3}>
+                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #111D4A" }} >
                         <Typography variant="h5" gutterBottom> INFECTED</Typography>
                         <Typography variant="h6" gutterBottom>
                             <CountUp start={0} end={confirmed} duration={1.5} separator="," />
@@ -75,8 +75,8 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* RECOVERED */}
-                <Grid item xs={12} md={6}>
-                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #57ff70" }} >
+                <Grid item xs={11} md={6} lg={3}>
+                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #111D4A" }} >
                         <Typography variant="h5" gutterBottom> RECOVERED</Typography>
                         <Typography variant="h6" gutterBottom>
                             <CountUp start={0} end={recovered} duration={1.5} separator="," />
@@ -88,8 +88,8 @@ export default function InfoCards() {
                 </Grid>
 
                 {/* DEATHS */}
-                <Grid item xs={12} md={6}>
-                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #ff5757" }} >
+                <Grid item xs={11} md={6} lg={3}>
+                    <Paper className={classes.paper} style={{ borderBottom: "15px solid #111D4A" }} >
                         <Typography variant="h5" gutterBottom> DEATHS</Typography>
                         <Typography variant="h6" gutterBottom>
                             <CountUp start={0} end={deaths} duration={1.5} separator="," />

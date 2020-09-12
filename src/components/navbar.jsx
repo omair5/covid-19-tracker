@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('md')]: {
             textAlign:'center',
             padding:'7px 0px',
-            fontSize:'18px',
+            fontSize:'22px',
             fontWeight:'bolder'
         },
     },
