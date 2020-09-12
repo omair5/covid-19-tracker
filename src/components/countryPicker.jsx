@@ -3,15 +3,14 @@ import { NativeSelect } from '@material-ui/core';
 import FormControl from '@material-ui/core/FormControl';
 import { store } from './globalstate';
 
-
 const CountryPicker = () => {
     // ----------LOGIC
     // getting HandleCountryChange from the context
-    const { HandleCountryChange,countryPicker } = useContext(store)
-    
+    const { HandleCountryChange, countryPicker } = useContext(store)
+
     // UI
     return (
-        <div>
+        <div style={{margin:'20px 10px'}}>
             <FormControl >
                 <NativeSelect onChange={(e) => (HandleCountryChange(e.target.value))}>
                     <option>Global</option>

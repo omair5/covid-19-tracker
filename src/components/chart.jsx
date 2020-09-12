@@ -18,8 +18,6 @@ const Chart = () => {
     useEffect(() => {
         async function DailyData() {
             setdata(await G_Daily_data())
-
-
         }
         DailyData()
     }, [])
@@ -32,17 +30,17 @@ const Chart = () => {
                 label: 'CONFIRMED',
                 fill: false,
                 lineTension: 0.1,
-                backgroundColor: 'rgba(75,192,192,0.4)',
-                borderColor: 'rgba(75,192,192,1)',
+                backgroundColor: '#5496ff',
+                borderColor: '#5496ff',
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 0.0,
                 borderJoinStyle: 'miter',
-                pointBorderColor: 'rgba(75,192,192,1)',
+                pointBorderColor: '#5496ff',
                 pointBackgroundColor: '#fff',
                 pointBorderWidth: 1,
                 pointHoverRadius: 5,
-                pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+                pointHoverBackgroundColor: '#5496ff',
                 pointHoverBorderColor: 'rgba(220,220,220,1)',
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
@@ -53,17 +51,17 @@ const Chart = () => {
                 label: 'DEATHS',
                 fill: false,
                 lineTension: 0.1,
-                backgroundColor: 'rgba(75,92,92,0.4)',
-                borderColor: 'rgba(75,92,92,1)',
+                backgroundColor: '#ff5757',
+                borderColor: '#ff5757',
                 borderCapStyle: 'butt',
                 borderDash: [],
                 borderDashOffset: 10.0,
                 borderJoinStyle: 'miter',
-                pointBorderColor: 'rgba(75,92,92,1)',
+                pointBorderColor: '#ff5757',
                 pointBackgroundColor: '#fgf',
                 pointBorderWidth: 1,
                 pointHoverRadius: 5,
-                pointHoverBackgroundColor: 'rgba(75,92,192,1)',
+                pointHoverBackgroundColor: '#ff5757',
                 pointHoverBorderColor: 'rgba(220,20,20,1)',
                 pointHoverBorderWidth: 2,
                 pointRadius: 1,
@@ -78,7 +76,7 @@ const Chart = () => {
         labels: ['Confirmed', 'Recovered', 'Deaths'],
         datasets: [
             {
-                label: "hello",
+                label: "Bar Chart",
                 backgroundColor: 'rgba(255,99,132,0.2)',
                 borderColor: 'rgba(255,99,132,1)',
                 borderWidth: 1,
@@ -92,11 +90,7 @@ const Chart = () => {
     // UI
     return (
         <div >
-            {country === '' ? data === '' ? null : <Line data={lineChart} /> : <Bar data={BarChart} width={100} height={50} />}
-
-
-
-
+            {country === 'Global' ? data === '' ? null : <Line data={lineChart} width={60} height={15} /> : <Bar data={BarChart} width={100} height={25} />}
         </div>
     );
 }
