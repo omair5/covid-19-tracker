@@ -9,11 +9,7 @@ const Chart = () => {
 
     // using context for specific country data of BAR CHART (SPECIFIC COUNTRY)
     const { state: { confirmed, recovered, deaths }, country } = useContext(store)
-    if (country === '') {
-        console.log("it is empty")
-    }
-
-
+    
     // IT FETCHES DATA AFTER UI RENDERS
     useEffect(() => {
         async function DailyData() {
