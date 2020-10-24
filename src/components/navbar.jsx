@@ -130,6 +130,7 @@ export default function Navbar() {
                                     }}
                                     inputProps={{ 'aria-label': 'search' }}
                                     value={searchBarValue}
+									fullWidth={true}
                                 />
                                 {searchResult === '' ? null : searchResult.length === 0 ? <div className={classes.filter} style={{ textAlign: 'center' }}><p>Result Not Found</p></div> :
                                     <div className={classes.filter} ref={searchRef}>
